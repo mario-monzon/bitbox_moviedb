@@ -20,7 +20,7 @@ abstract class ApiService extends ChopperService {
     final client = ChopperClient(
 
       baseUrl: 'https://api.themoviedb.org/3/',
-      interceptors: [Interceptor(), HttpLoggingInterceptor()],
+   //   interceptors: [Interceptor(), HttpLoggingInterceptor()],
       converter: ModelConverter(),
       errorConverter: JsonConverter(),
       services: [

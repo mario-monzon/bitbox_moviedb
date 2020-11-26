@@ -18,7 +18,7 @@ class _$ApiService extends ApiService {
 
   @override
   Future<Response<Popular>> getPopularMovies() {
-    final $url = 'movie/popular';
+    final $url = 'movie/popular?api_key=46514b47bc995b14fd13c566f27ac058';
     final $request = Request('GET', $url, client.baseUrl);
     return client.send<Popular, Popular>($request);
   }
